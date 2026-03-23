@@ -211,8 +211,17 @@ export function ProtoLayer() {
       </section>
 
       {/* === СЕКЦИЯ 3: ВОЗМОЖНОСТИ === */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-24 bg-white overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <svg className="w-full h-full" viewBox="0 0 1200 800" fill="none" preserveAspectRatio="xMidYMid slice">
+            <path d="M0,90 C300,65 600,115 1200,90" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.07"/>
+            <path d="M0,240 C300,215 600,265 1200,240" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.06"/>
+            <path d="M0,410 C300,385 600,435 1200,410" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.07"/>
+            <path d="M0,570 C300,545 600,595 1200,570" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.06"/>
+            <path d="M0,720 C300,695 600,745 1200,720" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.05"/>
+          </svg>
+        </div>
+        <div className="relative max-w-6xl mx-auto px-6">
           <FadeIn>
             <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#4A7FA5] mb-4 block">
               ВОЗМОЖНОСТИ

@@ -50,8 +50,16 @@ export function LeadForm() {
   };
 
   return (
-    <section id="lead" className="py-24 bg-white">
-      <div className="max-w-3xl mx-auto px-6">
+    <section id="lead" className="relative py-24 bg-white overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <svg className="w-full h-full" viewBox="0 0 1200 700" fill="none" preserveAspectRatio="xMidYMid slice">
+          <path d="M0,80 C250,55 550,105 1200,80" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.07"/>
+          <path d="M0,230 C250,205 550,255 1200,230" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.06"/>
+          <path d="M0,400 C250,375 550,425 1200,400" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.07"/>
+          <path d="M0,560 C250,535 550,585 1200,560" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.05"/>
+        </svg>
+      </div>
+      <div className="relative max-w-3xl mx-auto px-6">
         <FadeIn>
           <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#4A7FA5] mb-4 block">
             ДЛЯ ВРАЧЕЙ
