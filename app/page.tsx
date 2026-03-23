@@ -6,7 +6,6 @@ import { Reviews } from "@/components/Reviews";
 import { FAQ } from "@/components/FAQ";
 import { Contact } from "@/components/Contact";
 import { ProtoLayer } from "@/components/ProtoLayer";
-import { LeadForm } from "@/components/LeadForm";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <Reviews />
       <FAQ />
       <Contact />
-      <LeadForm />
     </main>
   );
 }

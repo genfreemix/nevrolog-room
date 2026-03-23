@@ -92,20 +92,6 @@ export function ProtoLayer() {
 
           <FadeIn delay={0.3}>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#lead"
-                className="px-7 py-3 bg-[#C9A96E] text-[#0A1628] rounded-full font-semibold text-sm hover:bg-[#e0bf85] transition-colors"
-              >
-                Хочу такой сайт
-              </a>
-              <a
-                href="https://kayur-travel-demo.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-7 py-3 border border-white/20 text-white rounded-full font-semibold text-sm hover:border-white/50 transition-colors"
-              >
-                Узнать о подходе →
-              </a>
             </div>
           </FadeIn>
         </div>
@@ -168,29 +154,11 @@ export function ProtoLayer() {
 
           {/* Adaptive note */}
           <FadeIn delay={0.5}>
-            <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-xl border border-[#e8ecf0] mb-10 w-fit">
-              <Smartphone size={15} className="text-[#4A7FA5] flex-shrink-0" />
-              <span className="text-[#718096] text-xs">
+            <div className="flex items-start gap-4 px-6 py-5 bg-white rounded-xl border border-[#e8ecf0]">
+              <Smartphone size={20} className="text-[#4A7FA5] flex-shrink-0 mt-0.5" />
+              <p className="text-[#2D3748] text-base leading-relaxed">
                 Сайт адаптирован под смартфоны, планшеты и компьютеры — пациент найдёт вас с любого устройства.
-              </span>
-            </div>
-          </FadeIn>
-
-          {/* Финальный двойной CTA */}
-          <FadeIn delay={0.55}>
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#lead"
-                className="px-8 py-4 bg-[#0A1628] text-white rounded-full font-semibold text-sm hover:bg-[#162040] transition-colors"
-              >
-                Разобрать под мою практику
-              </a>
-              <a
-                href="#lead"
-                className="px-8 py-4 border-2 border-[#0A1628] text-[#0A1628] rounded-full font-semibold text-sm hover:bg-[#0A1628] hover:text-white transition-colors"
-              >
-                Получить структуру сайта
-              </a>
+              </p>
             </div>
           </FadeIn>
         </div>
