@@ -43,17 +43,8 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-24 bg-white overflow-hidden">
-      {/* Wave decoration */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <svg className="w-full h-full" viewBox="0 0 1200 700" fill="none" preserveAspectRatio="xMidYMid slice">
-          <path d="M0,60 C250,40 500,80 1200,60" stroke="#4A7FA5" strokeWidth="1.5" opacity="0.18"/>
-          <path d="M0,220 C250,200 500,240 1200,220" stroke="#4A7FA5" strokeWidth="1.4" opacity="0.15"/>
-          <path d="M0,390 C250,370 500,410 1200,390" stroke="#4A7FA5" strokeWidth="1.5" opacity="0.18"/>
-          <path d="M0,560 C250,540 500,580 1200,560" stroke="#4A7FA5" strokeWidth="1.3" opacity="0.13"/>
-        </svg>
-      </div>
-      <div className="relative max-w-3xl mx-auto px-6">
+    <section id="faq" className="py-24 bg-white">
+      <div className="max-w-3xl mx-auto px-6">
         <FadeIn>
           <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#4A7FA5] mb-4 block">
             ЧАСТО СПРАШИВАЮТ
