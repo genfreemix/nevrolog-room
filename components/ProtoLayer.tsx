@@ -1,5 +1,5 @@
 ﻿import { FadeIn } from "@/components/FadeIn";
-import { CheckCircle, Smartphone, Zap, Brain } from "lucide-react";
+import { CheckCircle, Smartphone } from "lucide-react";
 
 const outcomes = [
   "Сайт завершён — пациенты находят вас в поиске",
@@ -40,50 +40,11 @@ const phases = [
   },
 ];
 
-const capabilities = [
-  {
-    icon: Smartphone,
-    tag: "УСТРОЙСТВА",
-    title: "Работает на всех устройствах",
-    desc: "Сайт адаптирован под смартфоны, планшеты и компьютеры — удобство сохраняется на любом экране.",
-    points: [
-      "Смартфоны — главный источник трафика",
-      "Планшеты — изучение и сравнение",
-      "Компьютеры — запись и оформление",
-    ],
-  },
-  {
-    icon: Zap,
-    tag: "МАСШТАБ",
-    title: "Можно развить в полноценную систему",
-    desc: "Сайт — это база. На неё надстраиваются инструменты, умножающие результат.",
-    points: [
-      "Чат-бот для обработки записей",
-      "ИИ-чат как эксперт по симптомам",
-      "Автоматика напоминаний и удержания",
-    ],
-  },
-  {
-    icon: Brain,
-    tag: "ИИ",
-    title: "ИИ, который знает вашу практику",
-    desc: "ИИ обучается на ваших услугах и консультирует пациентов, снижая нагрузку на запись.",
-    points: [
-      "Отвечает на вопросы 24/7",
-      "Знает ваши услуги и цены",
-      "Ведёт пациента к записи",
-    ],
-  },
-];
-
 export function ProtoLayer() {
   return (
     <>
       {/* === СЕКЦИЯ 1: ТЁМНАЯ — ОБРАЗЕЦ САЙТА === */}
-      <section
-        id="proto"
-        className="py-24 bg-[#0A1628] text-white"
-      >
+      <section id="proto" className="py-24 bg-[#0A1628] text-white">
         <div className="max-w-6xl mx-auto px-6">
           <FadeIn>
             <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#C9A96E] mb-4 block">
@@ -101,7 +62,6 @@ export function ProtoLayer() {
             </p>
           </FadeIn>
 
-          {/* Outcomes */}
           <FadeIn delay={0.2}>
             <ul className="grid sm:grid-cols-2 gap-3 mb-14 max-w-2xl">
               {outcomes.map((item) => (
@@ -113,7 +73,6 @@ export function ProtoLayer() {
             </ul>
           </FadeIn>
 
-          {/* Included table */}
           <FadeIn delay={0.25}>
             <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#4A7FA5] mb-5">
               В САМОМ САЙТЕ ВКЛЮЧЕНО
@@ -131,7 +90,6 @@ export function ProtoLayer() {
             </div>
           </FadeIn>
 
-          {/* CTAs */}
           <FadeIn delay={0.3}>
             <div className="flex flex-wrap gap-4">
               <a
@@ -190,7 +148,7 @@ export function ProtoLayer() {
 
           {/* CTA-баннер */}
           <FadeIn delay={0.45}>
-            <div className="bg-[#0A1628] rounded-2xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className="bg-[#0A1628] rounded-2xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-6">
               <div>
                 <p className="text-white font-semibold text-lg mb-1">
                   Это не просто сайт.
@@ -207,61 +165,20 @@ export function ProtoLayer() {
               </a>
             </div>
           </FadeIn>
-        </div>
-      </section>
 
-      {/* === СЕКЦИЯ 3: ВОЗМОЖНОСТИ === */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <FadeIn>
-            <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#4A7FA5] mb-4 block">
-              ВОЗМОЖНОСТИ
-            </span>
+          {/* Adaptive note */}
+          <FadeIn delay={0.5}>
+            <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-xl border border-[#e8ecf0] mb-10 w-fit">
+              <Smartphone size={15} className="text-[#4A7FA5] flex-shrink-0" />
+              <span className="text-[#718096] text-xs">
+                Сайт адаптирован под смартфоны, планшеты и компьютеры — пациент найдёт вас с любого устройства.
+              </span>
+            </div>
           </FadeIn>
-          <FadeIn delay={0.1}>
-            <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-[#0A1628] leading-tight mb-4 max-w-3xl">
-              Система адаптируется под вашу практику
-            </h2>
-          </FadeIn>
-          <FadeIn delay={0.15}>
-            <p className="text-[#718096] text-lg max-w-2xl mb-14">
-              Сайт — это начало. На него надстраиваются инструменты, умножающие результат.
-            </p>
-          </FadeIn>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-14">
-            {capabilities.map((cap, i) => {
-              const Icon = cap.icon;
-              return (
-                <FadeIn key={cap.tag} delay={0.1 + i * 0.1}>
-                  <div className="bg-[#F4F6F9] rounded-2xl p-7 h-full hover:shadow-md transition-shadow">
-                    <div className="w-12 h-12 rounded-xl bg-[#0A1628] flex items-center justify-center mb-5">
-                      <Icon size={22} className="text-[#C9A96E]" />
-                    </div>
-                    <span className="text-[10px] font-bold tracking-[0.22em] text-[#4A7FA5] mb-2 block">
-                      {cap.tag}
-                    </span>
-                    <h3 className="font-playfair text-xl font-semibold text-[#0A1628] mb-3">
-                      {cap.title}
-                    </h3>
-                    <p className="text-[#718096] text-sm leading-relaxed mb-5">{cap.desc}</p>
-                    <ul className="space-y-2">
-                      {cap.points.map((pt) => (
-                        <li key={pt} className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#C9A96E] mt-1.5 flex-shrink-0" />
-                          <span className="text-[#4a5568] text-xs">{pt}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </FadeIn>
-              );
-            })}
-          </div>
 
           {/* Финальный двойной CTA */}
-          <FadeIn delay={0.4}>
-            <div className="flex flex-wrap gap-4 justify-center">
+          <FadeIn delay={0.55}>
+            <div className="flex flex-wrap gap-4">
               <a
                 href="#lead"
                 className="px-8 py-4 bg-[#0A1628] text-white rounded-full font-semibold text-sm hover:bg-[#162040] transition-colors"
