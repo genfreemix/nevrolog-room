@@ -134,29 +134,9 @@ export function ProtoLayer() {
 
           {/* CTA-баннер */}
           <FadeIn delay={0.45}>
-            <div className="bg-[#0A1628] rounded-2xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-6">
-              <div>
-                <p className="text-white font-semibold text-lg mb-1">
-                  Это не просто сайт.
-                </p>
-                <p className="text-[#9aafc7] text-sm">
-                  Это система привлечения, контроля и роста частной медицинской практики. Начните с этапа 1 — остальное нарастёт.
-                </p>
-              </div>
-              <a
-                href="#lead"
-                className="flex-shrink-0 px-7 py-3 bg-[#C9A96E] text-[#0A1628] rounded-full font-semibold text-sm hover:bg-[#e0bf85] transition-colors"
-              >
-                Хочу такой сайт
-              </a>
-            </div>
-          </FadeIn>
-
-          {/* Adaptive note */}
-          <FadeIn delay={0.5}>
-            <div className="flex items-start gap-4 px-6 py-5 bg-white rounded-xl border border-[#e8ecf0]">
-              <Smartphone size={20} className="text-[#4A7FA5] flex-shrink-0 mt-0.5" />
-              <p className="text-[#2D3748] text-base leading-relaxed">
+            <div className="bg-[#0A1628] rounded-2xl p-8 flex items-center gap-4">
+              <Smartphone size={22} className="text-[#C9A96E] flex-shrink-0" />
+              <p className="text-white text-base leading-relaxed">
                 Сайт адаптирован под смартфоны, планшеты и компьютеры — пациент найдёт вас с любого устройства.
               </p>
             </div>
