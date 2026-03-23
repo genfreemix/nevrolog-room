@@ -50,7 +50,7 @@ export function LeadForm() {
   };
 
   return (
-    <section id="lead-form" className="py-24 bg-white">
+    <section id="lead" className="py-24 bg-white">
       <div className="max-w-3xl mx-auto px-6">
         <FadeIn>
           <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#4A7FA5] mb-4 block">
