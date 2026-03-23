@@ -1,0 +1,142 @@
+import { FadeIn } from "@/components/FadeIn";
+import { ChevronDown } from "lucide-react";
+
+export function Hero() {
+  return (
+    <section
+      id="top"
+      className="relative min-h-screen bg-white flex items-center overflow-hidden pt-20"
+    >
+      {/* Split background */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#F4F6F9] -z-10 hidden md:block" />
+      <div className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full border border-[#C9A96E]/15 -z-10 hidden md:block" />
+      <div className="absolute top-1/4 right-1/3 w-44 h-44 rounded-full border border-[#4A7FA5]/10 -z-10 hidden md:block" />
+
+      <div className="max-w-6xl mx-auto px-6 w-full py-16 md:py-24">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          {/* Left: Text */}
+          <div>
+            <FadeIn delay={0.1}>
+              <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#4A7FA5] mb-6 block">
+                Частная практика · Магадан
+              </span>
+            </FadeIn>
+
+            <FadeIn delay={0.2}>
+              <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-semibold text-[#0A1628] leading-[1.05] mb-6">
+                Врач,
+                <br />
+                которому
+                <br />
+                <span className="text-[#4A7FA5]">доверяют.</span>
+              </h1>
+            </FadeIn>
+
+            <FadeIn delay={0.3}>
+              <p className="text-lg text-[#718096] leading-relaxed mb-8 max-w-md">
+                Оксана Назаренко — частный врач-невролог в Магадане. Без
+                очередей, без посредников. Только вы и специалист, которому
+                можно задать любой вопрос.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.4}>
+              <div className="flex flex-col sm:flex-row gap-3 mb-12">
+                <a
+                  href="/#book"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-[#0A1628] text-white text-sm font-medium rounded-full hover:bg-[#4A7FA5] transition-colors duration-300"
+                >
+                  Записаться на приём
+                </a>
+                <a
+                  href="/#services"
+                  className="inline-flex items-center justify-center px-8 py-4 border border-[#0A1628] text-[#0A1628] text-sm font-medium rounded-full hover:bg-[#F4F6F9] transition-colors duration-300"
+                >
+                  Услуги и цены
+                </a>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.5}>
+              <div className="flex items-center gap-8 pt-6 border-t border-gray-100">
+                <div>
+                  <div className="font-playfair text-2xl font-semibold text-[#0A1628]">
+                    12+
+                  </div>
+                  <div className="text-xs text-[#718096] mt-0.5">лет практики</div>
+                </div>
+                <div className="h-8 w-px bg-gray-200" />
+                <div>
+                  <div className="font-playfair text-2xl font-semibold text-[#0A1628]">
+                    500+
+                  </div>
+                  <div className="text-xs text-[#718096] mt-0.5">пациентов</div>
+                </div>
+                <div className="h-8 w-px bg-gray-200" />
+                <div>
+                  <div className="font-playfair text-2xl font-semibold text-[#0A1628]">
+                    от 3 000 ₽
+                  </div>
+                  <div className="text-xs text-[#718096] mt-0.5">консультация</div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+
+          {/* Right: Doctor photo placeholder */}
+          <FadeIn delay={0.3} direction="left">
+            <div className="relative flex items-center justify-center h-[480px] md:h-[560px]">
+              {/* Main portrait card */}
+              <div className="relative w-64 h-80 md:w-80 md:h-[420px] rounded-2xl bg-[#0A1628] overflow-hidden shadow-2xl">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-[#C9A96E]" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <div className="w-24 h-24 rounded-full border-2 border-[#C9A96E]/40 flex items-center justify-center mb-4">
+                    <span className="font-playfair text-3xl font-semibold text-white">
+                      ОН
+                    </span>
+                  </div>
+                  <div className="text-center px-6">
+                    <div className="font-playfair text-white text-lg font-medium">
+                      Оксана Назаренко
+                    </div>
+                    <div className="text-[#C9A96E] text-xs tracking-widest uppercase mt-1">
+                      Невролог
+                    </div>
+                    <div className="mt-4 text-[#718096] text-xs leading-relaxed">
+                      [здесь будет
+                      <br />
+                      фото врача]
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#C9A96E]/10 to-transparent" />
+              </div>
+
+              {/* Floating badge: price */}
+              <div className="absolute top-8 -right-2 md:right-4 bg-white rounded-xl px-4 py-3 shadow-lg border border-gray-100">
+                <div className="text-[11px] tracking-widest text-[#718096] uppercase mb-0.5">
+                  Первичный приём
+                </div>
+                <div className="font-semibold text-[#0A1628]">от 3 000 ₽</div>
+              </div>
+
+              {/* Floating badge: available */}
+              <div className="absolute bottom-12 -left-2 md:left-4 bg-white rounded-xl px-4 py-3 shadow-lg border border-gray-100">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-green-400" />
+                  <span className="text-xs text-[#2D3748]">Запись открыта</span>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-[#718096]">
+        <span className="text-[10px] tracking-widest uppercase">Далее</span>
+        <ChevronDown size={16} className="animate-bounce" />
+      </div>
+    </section>
+  );
+}
