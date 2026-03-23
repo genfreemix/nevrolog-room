@@ -27,11 +27,11 @@ export function HowToBook() {
     <section id="book" className="relative py-24 bg-white overflow-hidden">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <svg className="w-full h-full" viewBox="0 0 1200 700" fill="none" preserveAspectRatio="xMidYMid slice">
-          <path d="M0,100 C300,75 600,125 1200,100" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.07"/>
-          <path d="M0,240 C300,215 600,265 1200,240" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.06"/>
-          <path d="M0,390 C300,365 600,415 1200,390" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.07"/>
-          <path d="M0,530 C300,505 600,555 1200,530" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.06"/>
-          <path d="M0,650 C300,625 600,675 1200,650" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.05"/>
+          <path d="M0,100 C300,75 600,125 1200,100" stroke="#4A7FA5" strokeWidth="1.5" opacity="0.18"/>
+          <path d="M0,240 C300,215 600,265 1200,240" stroke="#4A7FA5" strokeWidth="1.4" opacity="0.15"/>
+          <path d="M0,390 C300,365 600,415 1200,390" stroke="#4A7FA5" strokeWidth="1.5" opacity="0.18"/>
+          <path d="M0,530 C300,505 600,555 1200,530" stroke="#4A7FA5" strokeWidth="1.3" opacity="0.13"/>
+          <path d="M0,650 C300,625 600,675 1200,650" stroke="#4A7FA5" strokeWidth="1.2" opacity="0.11"/>
         </svg>
       </div>
       <div className="relative max-w-6xl mx-auto px-6">

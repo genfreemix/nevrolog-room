@@ -15,15 +15,15 @@ export function Hero() {
       {/* Wave decorations on white area */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
         <svg className="w-full h-full" viewBox="0 0 1200 900" fill="none" preserveAspectRatio="xMidYMid slice">
-          <path d="M0,70 C200,50 400,90 600,70 S1000,50 1200,70" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.08"/>
-          <path d="M0,160 C200,140 400,180 600,160 S1000,140 1200,160" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.07"/>
-          <path d="M0,260 C200,240 400,280 600,260 S1000,240 1200,260" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.09"/>
-          <path d="M0,360 C200,340 400,380 600,360 S1000,340 1200,360" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.07"/>
-          <path d="M0,460 C200,440 400,480 600,460 S1000,440 1200,460" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.08"/>
-          <path d="M0,560 C200,540 400,580 600,560 S1000,540 1200,560" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.06"/>
-          <path d="M0,660 C200,640 400,680 600,660 S1000,640 1200,660" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.07"/>
-          <path d="M0,760 C200,740 400,780 600,760 S1000,740 1200,760" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.05"/>
-          <path d="M0,860 C200,840 400,880 600,860 S1000,840 1200,860" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.05"/>
+          <path d="M0,70 C200,50 400,90 600,70 S1000,50 1200,70" stroke="#4A7FA5" strokeWidth="1.5" opacity="0.18"/>
+          <path d="M0,160 C200,140 400,180 600,160 S1000,140 1200,160" stroke="#4A7FA5" strokeWidth="1.4" opacity="0.15"/>
+          <path d="M0,260 C200,240 400,280 600,260 S1000,240 1200,260" stroke="#4A7FA5" strokeWidth="1.5" opacity="0.18"/>
+          <path d="M0,360 C200,340 400,380 600,360 S1000,340 1200,360" stroke="#4A7FA5" strokeWidth="1.4" opacity="0.14"/>
+          <path d="M0,460 C200,440 400,480 600,460 S1000,440 1200,460" stroke="#4A7FA5" strokeWidth="1.5" opacity="0.16"/>
+          <path d="M0,560 C200,540 400,580 600,560 S1000,540 1200,560" stroke="#4A7FA5" strokeWidth="1.3" opacity="0.13"/>
+          <path d="M0,660 C200,640 400,680 600,660 S1000,640 1200,660" stroke="#4A7FA5" strokeWidth="1.4" opacity="0.14"/>
+          <path d="M0,760 C200,740 400,780 600,760 S1000,740 1200,760" stroke="#4A7FA5" strokeWidth="1.3" opacity="0.12"/>
+          <path d="M0,860 C200,840 400,880 600,860 S1000,840 1200,860" stroke="#4A7FA5" strokeWidth="1.2" opacity="0.11"/>
         </svg>
       </div>
 
