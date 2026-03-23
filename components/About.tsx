@@ -28,8 +28,18 @@ const specializations = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="about" className="relative py-24 bg-white overflow-hidden">
+      {/* Wave decoration */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <svg className="w-full h-full" viewBox="0 0 1200 700" fill="none" preserveAspectRatio="xMidYMid slice">
+          <path d="M0,80 C300,55 600,105 1200,80" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.07"/>
+          <path d="M0,200 C300,175 600,225 1200,200" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.06"/>
+          <path d="M0,340 C300,315 600,365 1200,340" stroke="#4A7FA5" strokeWidth="0.9" opacity="0.08"/>
+          <path d="M0,480 C300,455 600,505 1200,480" stroke="#4A7FA5" strokeWidth="0.7" opacity="0.06"/>
+          <path d="M0,600 C300,575 600,625 1200,600" stroke="#4A7FA5" strokeWidth="0.8" opacity="0.05"/>
+        </svg>
+      </div>
+      <div className="relative max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left: bio */}
           <div>

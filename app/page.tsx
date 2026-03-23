@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <ProtoLayer />
       <About />
       <Services />
       <HowToBook />
       <Reviews />
       <FAQ />
       <Contact />
-      <ProtoLayer />
       <LeadForm />
     </main>
   );
